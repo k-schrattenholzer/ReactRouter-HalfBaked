@@ -10,7 +10,7 @@ it('renders a welcome message when signed out', async () => {
     </MemoryRouter>
   )
 
-  const gosh = screen.getByText('gosh')
+  const gosh = screen.getByRole('link', { name: 'Books' })
 
   expect(gosh).toMatchSnapshot()
 })
